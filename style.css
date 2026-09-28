@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#hero{
+    padding-top: 300px;
+
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: brown;
+    animation: zarba 2s linear infinite;
+}
+
+@keyframes zarba{
+    0%{
+    transform: translateY(0);
+    }50%{
+   transform:translateY(-200px) translateX(50px)  ;
+    }100%{
+     transform: translateY(0) translateX(100px);   
+    }
+}
+.loading{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    border: 8px solid transparent;
+    border-bottom: 8px solid red;
+    animation: aylana 2s linear infinite;
+}
+
+@keyframes aylana{
+  0%{
+transform: rotate(0);
+  } 100%{
+transform: rotate(360deg);
+  } 
+}
